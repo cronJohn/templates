@@ -1,6 +1,15 @@
-import { defineConfig } from '@unocss/vite';
-import { presetMini } from '@unocss/preset-mini';
+import { defineConfig, presetIcons, presetMini, presetWebFonts } from 'unocss'
 
 export default defineConfig({
-    presets: [presetMini()],
+  presets: [
+      presetMini(),
+      // npm install -D @iconify-json/[the-collection-you-want]
+      presetIcons({ /* options */ }),
+      presetWebFonts({
+        provider: 'google',
+        fonts: {
+            code: 'JetBrains Mono',
+        },
+      }),
+  ],
 });

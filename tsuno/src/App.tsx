@@ -2,8 +2,10 @@ import type { Component } from 'solid-js';
 
 const App: Component = () => {
     return (
-            <p class="text-4xl text-green-700 text-center py-20"></p>
-           );
+        <div class="w-screen h-screen flex items-center justify-center">
+            <h1 class='text-3xl font-code'>Hello, World!</h1>
+        </div>
+    );
 };
 
 export default App;
